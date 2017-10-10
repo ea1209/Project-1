@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	
+	<script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+	<!-- Moment.js Reference -->
+ 	
+ 	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+<style type="text/css">
+	
+body {
+	background: url("assets/images/social.jpg")center center no-repeat ; 
+	;
+	background-size: cover;
+	text-align: center;
+	
+}
+
+	.navbar {
+		height: 40px;
+		border: 1px solid white;
+		margin-top: 10px;
+		background-color: #004bc4; 
+	}
+
+label {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.panel-title {
+	
+	font-weight: bold;
+	font-size: 26px;
+	color: black;
+}
+
+.wrapper {
+
+	max-width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 2px solid black;
+
+}
+
+
+</style>
+
+<body>
+
+<div class="container">
+<nav class="navbar navbar-light bg-faded">
+  <h1 class="navbar-brand mb-0">Trindy</h1>
+</nav>
+	<br>
+<div class="wrapper">
+<div class="row">
+
+   
+      <div class="col-lg-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h2 class="panel-title">New Member Sign-Up</h2>
+          </div>
+          <div class="panel-body">
+
+            <!-- Sign-up Form (note the various input "types")-->
+
+            <form role="form">
+              <div class="form-group">
+                <label for="name-input">Name:</label>
+                <input class="form-control" id="name-input" type="text">
+              </div>
+              <div class="form-group">
+                <label for="location-input">Location:</label>
+                <input class="form-control" id="location-input" type="Location">
+              </div>
+              <div class="form-group">
+                <label for="age-input">Age:</label>
+                <input class="form-control" id="age-input" type="number">
+              </div>
+             <div class="form-group">
+  			<label for="interests">Interests:</label>
+  			 <select id="dates-field2" class="multiselect-ui form-control" multiple="multiple">
+    		<option>Exercising and body building</option>
+    		<option>Photography</option>
+    		<option>Love</option>
+   			<option>Volunteering</option>
+   			<option>Rihanna</option>
+    		<option>PlayStation 4</option>
+    		<option>Traveling and exploration</option>
+   			<option>Extreme adventure sports</option>
+    		<option>Yoga</option>
+    		<option>iPhone</option>
+    		<option>Justin Bieber</option>
+   			<option>Wine tasting</option>
+   			<option>Xbox (console)</option>
+    		<option>Friendship</option>
+    		<option>Shopping for latest trends</option>
+   			<option>Blogging</option>
+   			<option>Fantasy football</option>
+   			<option>Fashion</option>
+   			<option>Sports</option>
+   			<option>Movies</option>
+   			<option>Books/Reading</option>
+   			<option>Food</option>
+   			<option>Comics</option>
+   			<option>Celebrity News</option>
+   			<option>Computer Networking</option>
+   			<option>Business and Finance</option>
+   			<option>Politics</option>
+   			<option>Family/Children</option>
+   			<option>Arts</option>
+   			<option>Animals</option>
+   			<option>Music</option>
+
+ 			 </select>
+			</div>
+			<div class="form-group">
+			<label class="btn btn-primary">
+    		Photo <input type="file" hidden>
+			</label>
+			</div>
+              <div class="form-group">
+  			<label for="pwd">Password:</label>
+  			<input type="password" class="form-control" id="pwd">
+			</div>
+              <button class="btn btn-primary" id="add-user" type="submit">Submit</button>
+            </form>
+
+          </div>
+
+        </div>
+ 
+ </div>
+</div>
+</div>
+
+
+
+      	<nav class="navbar navbar-light"></nav>
+      </div>
+
+
+
+  </div>
+
+
+
+</body>
+</html>
